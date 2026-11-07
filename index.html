@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartSync — Bluetooth Heart Rate Workout Tracker for iPhone</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #ffffff;
+            --card: #f2f2f7;
+            --text: #1c1c1e;
+            --muted: #636366;
+            --accent: #ff2d55;
+            --link: #007aff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --card: #1c1c1e;
+                --text: #f2f2f7;
+                --muted: #aeaeb2;
+                --accent: #ff375f;
+                --link: #0a84ff;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        h1 { font-size: 2.2rem; margin-bottom: 0.25rem; }
+        .subtitle { color: var(--muted); font-size: 1.1rem; margin-top: 0; margin-bottom: 2rem; }
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .card h2 { margin-top: 0; font-size: 1.25rem; }
+        a { color: var(--link); text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        .nav { display: flex; gap: 20px; margin-top: 24px; }
+    </style>
+</head>
+<body>
+    <h1>HeartSync</h1>
+    <p class="subtitle">Bluetooth LE Heart Rate Workout Tracker for Apple Health &amp; Fitness Rings</p>
+
+    <div class="card">
+        <h2>Built for Sports Where You Can't Wear a Watch</h2>
+        <p>Track Volleyball, Boxing, Strength Training, and Other Sports using any standard Bluetooth Low Energy (BLE) heart rate armband or chest strap (Polar Verity Sense, Polar H10, Wahoo TICKR, Garmin HRM, Scosche Rhythm+, CooSpo, and more).</p>
+        <ul>
+            <li>Live 1 Hz BPM readout and 5-Zone Heart Rate bar</li>
+            <li>Biometric Active &amp; Total Calorie calculation (Keytel &amp; Mifflin-St Jeor equations)</li>
+            <li>Direct sync to Apple Health, Activity Rings, and iOS 18 Workout Effort Score</li>
+            <li>100% On-Device Privacy — zero accounts, zero servers, zero tracking</li>
+        </ul>
+    </div>
+
+    <div class="nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support &amp; FAQ</a>
+    </div>
+</body>
+</html>

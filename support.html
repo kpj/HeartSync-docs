@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support &amp; FAQ — HeartSync</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #ffffff;
+            --card: #f2f2f7;
+            --text: #1c1c1e;
+            --muted: #636366;
+            --link: #007aff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --card: #1c1c1e;
+                --text: #f2f2f7;
+                --muted: #aeaeb2;
+                --link: #0a84ff;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.65;
+        }
+        h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+        .subtitle { color: var(--muted); margin-top: 0; margin-bottom: 2rem; }
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        h2 { font-size: 1.2rem; margin-top: 0; }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <p><a href="index.html">&larr; Back to HeartSync</a></p>
+    <h1>Support &amp; FAQ</h1>
+    <p class="subtitle">Need help pairing your sensor or syncing workouts with Apple Health?</p>
+
+    <div class="card">
+        <h2>How do I connect my Bluetooth heart rate monitor?</h2>
+        <ol>
+            <li>Turn on your Bluetooth heart rate sensor (e.g., Polar Verity Sense, Polar H10, Wahoo TICKR, Garmin HRM) and ensure it is in heart rate broadcast mode.</li>
+            <li>Do <strong>not</strong> pair it in iOS Settings &rarr; Bluetooth (if it is already paired in iOS Settings or connected to another app, disconnect/forget it there so it can broadcast freely).</li>
+            <li>Open <strong>HeartSync</strong>, tap the sensor status pill in the top-right corner, and select your sensor under <em>Discovered Devices</em>.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>Why aren't my workouts showing in Apple Health or Fitness Rings?</h2>
+        <p>Ensure HeartSync has permission to read and write Health data:</p>
+        <p>Open <strong>iOS Settings &rarr; Health &rarr; Data Access &amp; Devices &rarr; HeartSync</strong> and tap <strong>Turn On All</strong>.</p>
+    </div>
+
+    <div class="card">
+        <h2>Does HeartSync continue tracking while my iPhone screen is locked?</h2>
+        <p>Yes! HeartSync uses Apple's native CoreBluetooth background mode (<code>bluetooth-central</code>) to receive continuous 1 Hz heart rate updates from your sensor and calculate active calories even while your iPhone screen is locked on the sidelines.</p>
+    </div>
+
+    <div class="card">
+        <h2>Contact Support</h2>
+        <p>For questions, bug reports, or feature requests, email:</p>
+        <p><a href="mailto:kim.philipp.jablonski@gmail.com">kim.philipp.jablonski@gmail.com</a></p>
+    </div>
+</body>
+</html>
